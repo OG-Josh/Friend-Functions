@@ -1,0 +1,91 @@
+Script started on Tue 12 Feb 2019 02:33:24 PM PST
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hw04[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hw04 $[00m date
+Tue Feb 12 14:33:26 PST 2019
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hw04[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hw04 $[00m ls -l
+total 44
+-rwxr--r-- 1 cs1c cs1c  227 Feb 12  2019 [0m[01;32mCMakeLists.txt[0m
+-rwxr--r-- 1 cs1c cs1c  397 Feb 12  2019 [01;32mDate.cpp[0m
+-rwxr--r-- 1 cs1c cs1c  334 Feb 12  2019 [01;32mDate.h[0m
+-rwxr--r-- 1 cs1c cs1c 1780 Feb 12  2019 [01;32memployee.cpp[0m
+-rwxr--r-- 1 cs1c cs1c  951 Feb 12  2019 [01;32memployee.h[0m
+-rwxr--r-- 1 cs1c cs1c 2124 Feb 12  2019 [01;32mmain.cpp[0m
+-rw-rw-r-- 1 cs1c cs1c    0 Feb 12 14:33 main.scr
+-rw-rw-r-- 1 cs1c cs1c  771 Feb 12 14:29 makefile
+-rwxr--r-- 1 cs1c cs1c 1403 Feb 12  2019 [01;32mProgrammer.cpp[0m
+-rwxr--r-- 1 cs1c cs1c  738 Feb 12  2019 [01;32mProgrammer.h[0m
+-rwxr--r-- 1 cs1c cs1c 3528 Feb 12  2019 [01;32mSoftwareArchitect.cpp[0m
+-rwxr--r-- 1 cs1c cs1c 1171 Feb 12  2019 [01;32mSoftwareArchitect.h[0m
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hw04[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hw04 $[00m makefi[K[K all
+make: Warning: File 'main.cpp' has modification time 28494 s in the future
+g++ -std=c++14 -Wall -g -c Date.cpp -o Date.o
+g++ -std=c++14 -Wall -g -c employee.cpp -o employee.o
+g++ -std=c++14 -Wall -g -c Programmer.cpp -o Programmer.o
+g++ -std=c++14 -Wall -g -c SoftwareArchitect.cpp -o SoftwareArchitect.o
+g++ -std=c++14 -Wall -g main.cpp -o main Date.o employee.o Programmer.o SoftwareArchitect.o
+make: warning:  Clock skew detected.  Your build may be incomplete.
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hw04[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hw04 $[00m ls -l
+total 544
+-rwxr--r-- 1 cs1c cs1c    227 Feb 12  2019 [0m[01;32mCMakeLists.txt[0m
+-rwxr--r-- 1 cs1c cs1c    397 Feb 12  2019 [01;32mDate.cpp[0m
+-rwxr--r-- 1 cs1c cs1c    334 Feb 12  2019 [01;32mDate.h[0m
+-rw-rw-r-- 1 cs1c cs1c  37288 Feb 12 14:33 Date.o
+-rwxr--r-- 1 cs1c cs1c   1780 Feb 12  2019 [01;32memployee.cpp[0m
+-rwxr--r-- 1 cs1c cs1c    951 Feb 12  2019 [01;32memployee.h[0m
+-rw-rw-r-- 1 cs1c cs1c  87992 Feb 12 14:33 employee.o
+-rwxrwxr-x 1 cs1c cs1c 179616 Feb 12 14:33 [01;32mmain[0m
+-rwxr--r-- 1 cs1c cs1c   2124 Feb 12  2019 [01;32mmain.cpp[0m
+-rw-rw-r-- 1 cs1c cs1c      0 Feb 12 14:33 main.scr
+-rw-rw-r-- 1 cs1c cs1c    771 Feb 12 14:29 makefile
+-rwxr--r-- 1 cs1c cs1c   1403 Feb 12  2019 [01;32mProgrammer.cpp[0m
+-rwxr--r-- 1 cs1c cs1c    738 Feb 12  2019 [01;32mProgrammer.h[0m
+-rw-rw-r-- 1 cs1c cs1c  90088 Feb 12 14:33 Programmer.o
+-rwxr--r-- 1 cs1c cs1c   3528 Feb 12  2019 [01;32mSoftwareArchitect.cpp[0m
+-rwxr--r-- 1 cs1c cs1c   1171 Feb 12  2019 [01;32mSoftwareArchitect.h[0m
+-rw-rw-r-- 1 cs1c cs1c 108632 Feb 12 14:33 SoftwareArchitect.o
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hw04[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hw04 $[00m ./main
+Testing compare method 
+Test 1 passed 
+Test 2 passed 
+
+Testing == operator 
+Test 1 passed 
+Test 2 passed 
+
+Testing addition method 
+12 years were added to Jimmy Fallon's age
+
+Testing + operator 
+2 years were added to Jimmy Fallon's age
+Jimmy Fallon  12345  949-555-1234  54  M  Comedian  100000  8/31/2014
+Jimmy Fallon  5432122  Joe Boss  4  7
+
+Testing >> operator 
+
+Testing << operator 
+Jimmy Fallon  12345  949-555-1234  54  M  Comedian  100000  
+Jimmy Fallon  5432122  Joe Boss  4  7
+
+Testing pre/post increment operators 
+Before operators
+Jimmy Fallon  12345  949-555-1234  54  M  Comedian  100000  
+Jimmy Fallon  5432122  Joe Boss  4  7
+
+After pre increment
+Jimmy Fallon  12345  949-555-1234  55  M  Comedian  100000  
+Jimmy Fallon  5432122  Joe Boss  4  7
+
+After assignment , age increase is reflected in the assigned object
+Jimmy Fallon  12345  949-555-1234  55  M  Comedian  100000  
+Jimmy Fallon  5432122  Joe Boss  4  7
+
+After post increment
+Jimmy Fallon  12345  949-555-1234  56  M  Comedian  100000  
+Jimmy Fallon  5432122  Joe Boss  4  7
+
+After assignment , age increase is not reflected in the assigned object
+Jimmy Fallon  12345  949-555-1234  55  M  Comedian  100000  
+Jimmy Fallon  5432122  Joe Boss  4  7
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hw04[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hw04 $[00m exit
+exit
+
+Script done on Tue 12 Feb 2019 02:33:48 PM PST
